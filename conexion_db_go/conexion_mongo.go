@@ -10,7 +10,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-func main() {
+func conectar_mongo() {
 	// Establecer la conexión con MongoDB
 	clientOptions := options.Client().ApplyURI("mongodb://localhost:27017") // Cambia la URI si es necesario
 	client, err := mongo.Connect(context.TODO(), clientOptions)
